@@ -1,5 +1,6 @@
 FROM centos:7RUN 
-yum install httpd -yEXPOSE 
-80COPY index.html /var/www/htmlCMD
-["httpd","-D","FOREGROUD"]
+yum install httpd -y  
+EXPOSE 80COPY
+index.html /var/www/htmlCMD
+["httpd","-D","FOREGROUND"]
 
